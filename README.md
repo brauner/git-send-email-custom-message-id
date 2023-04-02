@@ -11,7 +11,7 @@ His [original message](https://mastodon.social/@monsieuricon@social.kernel.org/1
 Porting my own workflow to use custom `Message-Id`s I really wanted to use them for patches sent with `git send-email` as well.
 While `b4` has mostly replaced `git send-email` it still is useful for sending patches that don't require complex patch series management and so should use uniform `Message-Id`s as well.
 
-And indeed, with some creative tinkering it's possible to use custom `Message-Id`s in `git send-email` as well as I showed in [this thread]((https://mastodon.social/@monsieuricon@social.kernel.org/110102644429872649).
+And indeed, with some creative tinkering it's possible to use custom `Message-Id`s in `git send-email` as well as I showed in [this thread](https://mastodon.social/@monsieuricon@social.kernel.org/110102644429872649).
 After some back and forth between @gregkh, Konstantin, and myself we came to a working version.
 
 This repository contains the necessary bits and pieces.

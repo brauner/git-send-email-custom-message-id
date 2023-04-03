@@ -23,8 +23,9 @@ msg.__setitem__('Message-Id', '<{}>'.format(new_msgid))
 
 f_patch.seek(0)
 
+val = msg.get_unixfrom()
 gen = email.generator.Generator(f_patch)
-flattened = gen.flatten(msg, unixfrom=True)
+flattened = gen.flatten(msg, unixfrom=False if val is None else True)
 
 f_patch.truncate()
 os.fsync(f_patch)
